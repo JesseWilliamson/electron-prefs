@@ -1,0 +1,44 @@
+
+#prefsBox{
+  margin: 25px;
+  padding: 25px;
+  background-color: var(--secondary); 
+  border-radius: 10px;
+}
+
+
+
+
+ * {
+   font-family: var(--fontFamily);
+   list-style-type: none;
+   margin: 2px;
+   padding: 0;
+   background-color: var(--primary);
+   color: var(--text);
+   font-size: calc(var(--fontSize)*1pt);
+ }
+
+ ::selection {
+  background: var(--accent);
+}
+
+
+.scrollbar::-webkit-scrollbar {
+  width: calc(var(--scrollbarWidth)* 1px);
+  background-color: var(--scrollbarBackgroundColor);
+} 
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbarThumbColor);
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: var(--scrollbarBackgroundColor);
+}
+
+ .sidebar::-webkit-scrollbar {
+   display: none;
+ }
+ 
